@@ -26,7 +26,7 @@ This is a simple and responsive To-Do List web application that allows users to 
 
 ## Screenshots
 
-![Welcome Page](screenshots/welcome.png)
+![Welcome Page](/images/screenshots/welcome.png)
 
 ![To-Do List](screenshots/todo.png)
 
