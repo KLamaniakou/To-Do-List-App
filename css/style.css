@@ -1,0 +1,175 @@
+/* Γενικές ρυθμίσεις */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Κεντρικό container για την welcome page */
+.welcome {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #153677);
+  padding: 10px;
+}
+
+/* Τίτλοι στην welcome σελίδα */
+.welcome h1 {
+  color: #bedde9;
+  text-align: center;
+  font-size: 48px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  letter-spacing: 1.5px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome h2 {
+  color: #bedde9;
+  text-align: center;
+  font-size: 48px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  letter-spacing: 1.5px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Κουμπί "Start" */
+.button1 {
+  border: none;
+  color: #000000;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 36px;
+  margin: 200px auto;
+  display: block;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #bedde9;
+  border: 2px solid #153677;
+}
+
+/* Hover εφέ για κουμπί */
+.button1:hover {
+  background-color: #153677;
+  color: #000000;
+}
+
+/* Container για το κύριο app */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #153677;
+  padding: 10px;
+}
+
+/* Πλαίσιο για την εφαρμογή todo */
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #bedde9;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+/* Τίτλος στην todo λίστα */
+.todo-app h2 {
+  color: #0c3880;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Εικονίδιο δίπλα στον τίτλο */
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* Γραμμή εισαγωγής και κουμπιού */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+/* Πεδίο εισόδου */
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+/* Πράσινο κουμπί προσθήκης */
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: #07bb43;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+/* Στυλ για κάθε στοιχείο λίστας */
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Εικονίδιο κυκλάκι πριν από κάθε task */
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(/images/uncheck.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+/* Όταν ένα task είναι ολοκληρωμένο */
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+/* Εικονίδιο για task που έχει τσεκαριστεί */
+ul li.checked::before {
+  background-image: url(/images/check.png);
+}
+
+/* Κουμπί διαγραφής (Χ) */
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* Hover εφέ για κουμπί διαγραφής */
+ul li span:hover {
+  background: #f80000d3;
+}
